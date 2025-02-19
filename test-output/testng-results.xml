@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-19T14:54:19 AWST" name="Suite" finished-at="2025-02-19T14:57:50 AWST" duration-ms="210250">
+    <groups>
+    </groups>
+    <test started-at="2025-02-19T14:54:19 AWST" name="Contact Page Tests" finished-at="2025-02-19T14:57:41 AWST" duration-ms="201409">
+      <class name="planittesting.Tests.ContactPageTests">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:54:19 AWST" name="LaunchApplication" finished-at="2025-02-19T14:54:24 AWST" duration-ms="5049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="mandatoryFields()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:54:24 AWST" name="mandatoryFields" finished-at="2025-02-19T14:54:55 AWST" duration-ms="30696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:54:55 AWST" name="tearDown" finished-at="2025-02-19T14:54:55 AWST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:54:55 AWST" name="LaunchApplication" finished-at="2025-02-19T14:54:59 AWST" duration-ms="3733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitFeedback(java.util.HashMap)[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:54:59 AWST" name="submitFeedback" data-provider="getData" finished-at="2025-02-19T14:55:23 AWST" duration-ms="23874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{forename=Test1Forename, feedbackMessage=Test 1 Message, email=test1email@xyz.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:55:23 AWST" name="tearDown" finished-at="2025-02-19T14:55:23 AWST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:55:23 AWST" name="LaunchApplication" finished-at="2025-02-19T14:55:27 AWST" duration-ms="3617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitFeedback(java.util.HashMap)[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:55:27 AWST" name="submitFeedback" data-provider="getData" finished-at="2025-02-19T14:55:59 AWST" duration-ms="31827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{forename=Test2 Forename, feedbackMessage=Test 2 Message, email=test2email@xyz.com.au}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:55:59 AWST" name="tearDown" finished-at="2025-02-19T14:55:59 AWST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:55:59 AWST" name="LaunchApplication" finished-at="2025-02-19T14:56:12 AWST" duration-ms="13741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitFeedback(java.util.HashMap)[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:56:12 AWST" name="submitFeedback" data-provider="getData" finished-at="2025-02-19T14:56:35 AWST" duration-ms="22416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{forename=Test3 Forename, feedbackMessage=Test 3 Message, email=test3email@xyz.co.in}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:56:35 AWST" name="tearDown" finished-at="2025-02-19T14:56:35 AWST" duration-ms="67" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:56:35 AWST" name="LaunchApplication" finished-at="2025-02-19T14:56:39 AWST" duration-ms="3736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitFeedback(java.util.HashMap)[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:56:39 AWST" name="submitFeedback" data-provider="getData" finished-at="2025-02-19T14:57:04 AWST" duration-ms="25423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{forename=Test4 Forename, feedbackMessage=Test 4 Message, email=test4email@sa.gov.au}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:57:04 AWST" name="tearDown" finished-at="2025-02-19T14:57:04 AWST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:57:04 AWST" name="LaunchApplication" finished-at="2025-02-19T14:57:10 AWST" duration-ms="5608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitFeedback(java.util.HashMap)[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:57:10 AWST" name="submitFeedback" data-provider="getData" finished-at="2025-02-19T14:57:40 AWST" duration-ms="30765" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{forename=Test5 Forename, feedbackMessage=Test 5 Message, email=test5email@xyz.net}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: alert-success' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.className: alert-success' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at planittesting.AbstractComponents.AbstractComponent.waitForExpectedElement(AbstractComponent.java:34)
+at planittesting.pageobjects.ContactPage.getSuccessMessage(ContactPage.java:105)
+at planittesting.Tests.ContactPageTests.submitFeedback(ContactPageTests.java:53)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".alert\-success"}
+  (Session info: chrome=122.0.6261.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3954c4fd7a3a023c27fec3bd83794a76, findElement {value=alert-success, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52399/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3954c4fd7a3a023c27fec3bd83794a76
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFeedback -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.ContactPageTests@5143c662]" started-at="2025-02-19T14:57:41 AWST" name="tearDown" finished-at="2025-02-19T14:57:41 AWST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- planittesting.Tests.ContactPageTests -->
+    </test> <!-- Contact Page Tests -->
+    <test started-at="2025-02-19T14:57:41 AWST" name="Cart Page Tests" finished-at="2025-02-19T14:57:50 AWST" duration-ms="8315">
+      <class name="planittesting.Tests.CartPageTests">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:planittesting.Tests.CartPageTests@49c6c24f]" started-at="2025-02-19T14:57:41 AWST" name="LaunchApplication" finished-at="2025-02-19T14:57:46 AWST" duration-ms="5230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="CartPageTests(int,int,int)[pri:0, instance:planittesting.Tests.CartPageTests@49c6c24f]" started-at="2025-02-19T14:57:46 AWST" name="CartPageTests" data-provider="testData" finished-at="2025-02-19T14:57:49 AWST" duration-ms="2973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CartPageTests -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:planittesting.Tests.CartPageTests@49c6c24f]" started-at="2025-02-19T14:57:49 AWST" name="tearDown" finished-at="2025-02-19T14:57:50 AWST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- planittesting.Tests.CartPageTests -->
+    </test> <!-- Cart Page Tests -->
+  </suite> <!-- Suite -->
+</testng-results>
