@@ -61,6 +61,7 @@ public class ContactPage extends AbstractComponent {
 
 
     public void clickSubmitButton() {
+    	waitForElementToClickAble(submitButton);
     	submitButton.click();
     }
 

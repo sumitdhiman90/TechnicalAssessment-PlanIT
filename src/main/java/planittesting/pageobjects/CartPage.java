@@ -23,40 +23,15 @@ public class CartPage extends AbstractComponent {
 	
 	@FindBy(css=".cart-item")
 	List<WebElement> cartProducts;
-	
-	@FindBy(css = "tbody tr:nth-child(1) td:nth-child(2)")
-    WebElement firstCartItemPrice;
-	
-	@FindBy(css = "tbody tr:nth-child(1) td:nth-child(3) input")
-    private WebElement firstCartItemQuantity;
-
-    @FindBy(css = "tbody tr:nth-child(1) td:nth-child(4)")
-    private WebElement firstCartItemSubTotal;
-    
-    @FindBy(css = "tbody tr:nth-child(2) td:nth-child(2)")
-    private WebElement secondCartItemPrice;
-
-    @FindBy(css = "tbody tr:nth-child(2) td:nth-child(3) input")
-    private WebElement secondCartItemQuantity;
-
-    @FindBy(css = "tbody tr:nth-child(2) td:nth-child(4)")
-    private WebElement secondCartItemSubTotal;
-    
-    @FindBy(css = "tbody tr:nth-child(3) td:nth-child(2)")
-    private WebElement thirdCartItemPrice;
-    
-    @FindBy(css = "tbody tr:nth-child(3) td:nth-child(3) input")
-    private WebElement thirdCartItemQuantity;
-
-    @FindBy(css = "tbody tr:nth-child(3) td:nth-child(4)")
-    private WebElement thirdCartItemSubTotal;
 
     @FindBy(className = "total")
     private WebElement cartItemTotal;
 	
 	By productsBy = By.cssSelector(".cart-item");
 	By titleOfProduct = By.cssSelector("td");
-	By priceOfProduct = By.cssSelector(".cart-item:first-child .ng-binding:nth-child(2)");
+	By priceOfProduct = By.cssSelector("td:nth-child(2)");
+	By CartItemQuantity = By.cssSelector("td:nth-child(3)");
+	By CartItemSubTotal = By.cssSelector("td:nth-child(4)");
 	By addToCart = By.cssSelector(".btn-success");
 	
 	public List<WebElement> getProductList() {
@@ -69,41 +44,26 @@ public class CartPage extends AbstractComponent {
 		return match;
 	}
 	
-	public int getFirstCartItemQuantity() {
-        return Integer.parseInt(firstCartItemQuantity.getAttribute("value"));
-    }
-
-    public int getSecondCartItemQuantity() {
-        return Integer.parseInt(secondCartItemQuantity.getAttribute("value"));
-    }
-    
-    public int getThirdCartItemQuantity() {
-        return Integer.parseInt(thirdCartItemQuantity.getAttribute("value"));
-    }
-    
-    public float getFirstItemPrice() {
-        return Float.parseFloat(firstCartItemPrice.getText().replace("$", ""));
-    }
-
-    public float getSecondItemPrice() {
-        return Float.parseFloat(secondCartItemPrice.getText().replace("$", ""));
-    }
-
-    public float getThirdItemPrice() {
-        return Float.parseFloat(thirdCartItemPrice.getText().replace("$", ""));
-    }
-    
-    public float getFirstItemSubTotal() {
-        return Float.parseFloat(firstCartItemSubTotal.getText().replace("$", ""));
-    }
-
-    public float getSecondItemSubTotal() {
-        return Float.parseFloat(secondCartItemSubTotal.getText().replace("$", ""));
-    }
-
-    public float getThirdItemSubTotal() {
-        return Float.parseFloat(thirdCartItemSubTotal.getText().replace("$", ""));
-    }
+	public WebElement getProductByName(String productName) {
+		WebElement prod = getProductList().stream().filter(product->
+		product.findElement(titleOfProduct).getText().equals(productName)).findFirst().orElse(null);
+		return prod;
+	}
+	
+	public float getProductPriceByName(String productName) {
+		WebElement prod = getProductByName(productName);
+		return Float.parseFloat(prod.findElement(priceOfProduct).getText().replace("$", ""));
+	}
+	
+	public int getCartItemQtyByName(String productName) {
+		WebElement prod = getProductByName(productName);
+		return Integer.parseInt(prod.findElement(CartItemQuantity).getText());
+	}
+	
+	public float getCartItemSubTotalByName(String productName) {
+		WebElement prod = getProductByName(productName);
+		return Float.parseFloat(prod.findElement(CartItemSubTotal).getText().replace("$", ""));
+	}
 
     public float getCartItemTotal() {
         return Float.parseFloat(cartItemTotal.getText().split(" ")[1].replace("$", ""));
