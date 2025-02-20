@@ -10,7 +10,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="LaunchApplication"/>
-          <include name="submitFeedback" invocation-numbers="4"/>
+          <include name="submitFeedback" invocation-numbers="2 3 4"/>
         </methods>
       </class> <!-- planittesting.Tests.ContactPageTests -->
     </classes>

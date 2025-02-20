@@ -9,54 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Contact Page Tests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">201,409</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Cart Page Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,315</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">209,724</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Contact Page Tests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">129,970</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Cart Page Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,301</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">136,271</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Contact Page Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">planittesting.Tests.ContactPageTests</td><td><a href="#m0">submitFeedback</a></td><td rowspan="1">1739948230216</td><td rowspan="1">30765</td></tr><tr><th colspan="4">Contact Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">planittesting.Tests.ContactPageTests</td><td><a href="#m1">mandatoryFields</a></td><td rowspan="1">1739948064852</td><td rowspan="1">30696</td></tr><tr class="passedeven"><td><a href="#m2">submitFeedback</a></td><td rowspan="4">1739948127199</td><td rowspan="4">31827</td></tr><tr class="passedeven"><td><a href="#m3">submitFeedback</a></td></tr><tr class="passedeven"><td><a href="#m4">submitFeedback</a></td></tr><tr class="passedeven"><td><a href="#m5">submitFeedback</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Cart Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">planittesting.Tests.CartPageTests</td><td><a href="#m6">CartPageTests</a></td><td rowspan="1">1739948266947</td><td rowspan="1">2973</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Contact Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">planittesting.Tests.ContactPageTests</td><td><a href="#m0">mandatoryFields</a></td><td rowspan="1">1740029712818</td><td rowspan="1">30697</td></tr><tr class="passedeven"><td><a href="#m1">submitFeedback</a></td><td rowspan="5">1740029779336</td><td rowspan="5">13987</td></tr><tr class="passedeven"><td><a href="#m2">submitFeedback</a></td></tr><tr class="passedeven"><td><a href="#m3">submitFeedback</a></td></tr><tr class="passedeven"><td><a href="#m4">submitFeedback</a></td></tr><tr class="passedeven"><td><a href="#m5">submitFeedback</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Cart Page Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">planittesting.Tests.CartPageTests</td><td><a href="#m6">CartPageTests</a></td><td rowspan="1">1740029842843</td><td rowspan="1">2858</td></tr></tbody>
 </table>
-<h2>Contact Page Tests</h2><h3 id="m0">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test5 Forename, feedbackMessage=Test 5 Message, email=test5email@xyz.net}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.className: alert-success&apos; (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at planittesting.AbstractComponents.AbstractComponent.waitForExpectedElement(AbstractComponent.java:34)
-	at planittesting.pageobjects.ContactPage.getSuccessMessage(ContactPage.java:105)
-	at planittesting.Tests.ContactPageTests.submitFeedback(ContactPageTests.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.alert\-success&quot;}
-  (Session info: chrome=122.0.6261.129)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3954c4fd7a3a023c27fec3bd83794a76, findElement {value=alert-success, using=class name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\sumit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52399}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52399/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3954c4fd7a3a023c27fec3bd83794a76
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 29 more
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">planittesting.Tests.ContactPageTests#mandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Contact Page Tests</h2><h3 id="m0">planittesting.Tests.ContactPageTests#mandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test3 Forename, feedbackMessage=Test 3 Message, email=test3email@xyz.co.in}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test2 Forename, feedbackMessage=Test 2 Message, email=test2email@xyz.com.au}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test3 Forename, feedbackMessage=Test 3 Message, email=test3email@xyz.co.in}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test4 Forename, feedbackMessage=Test 4 Message, email=test4email@sa.gov.au}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test1Forename, feedbackMessage=Test 1 Message, email=test1email@xyz.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Cart Page Tests</h2><h3 id="m6">planittesting.Tests.CartPageTests#CartPageTests</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>3</td><td>5</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test4 Forename, feedbackMessage=Test 4 Message, email=test4email@sa.gov.au}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test1 Forename, feedbackMessage=Test 1 Message, email=test1email@xyz.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">planittesting.Tests.ContactPageTests#submitFeedback</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{forename=Test5 Forename, feedbackMessage=Test 5 Message, email=test5email@xyz.net}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Cart Page Tests</h2><h3 id="m6">planittesting.Tests.CartPageTests#CartPageTests</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>2</td><td>5</td><td>3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

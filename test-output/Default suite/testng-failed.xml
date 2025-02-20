@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="planittesting.Tests.ContactPageTests">
+      <class name="planittesting.Tests.CartPageTests">
         <methods>
           <include name="tearDown"/>
           <include name="LaunchApplication"/>
-          <include name="submitFeedback" invocation-numbers="2"/>
+          <include name="CartPageTests" invocation-numbers="0"/>
         </methods>
-      </class> <!-- planittesting.Tests.ContactPageTests -->
+      </class> <!-- planittesting.Tests.CartPageTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
